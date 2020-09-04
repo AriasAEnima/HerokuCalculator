@@ -19,7 +19,7 @@ public class HerokuTrigCalculator {
 
     public static void main(String[] args) {       
         port(getPort());
-        get("/",(req, res) -> 
+        get("/calculadora",(req, res) -> 
                 "<h1> Calculadora Trigonometrica</h1>"
                 + "<form action=\"/calcule\" method=\"get\">\n"
                 + "  <label for=\"function\">Function: </label>\n"
